@@ -1,290 +1,230 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Focus OS</title>
-  <meta name="description" content="할 일을 관리하는 앱이 아니라, 지금 시작하게 만드는 앱. Focus OS" />
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FocusOS</title>
+
+<meta name="description" content="Start small, finish one thing. Focus together on FocusOS LIVE.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
 </head>
+
 <body class="min-h-screen bg-zinc-950 text-white">
-  <header class="sticky top-0 z-30 border-b border-white/10 bg-zinc-950/80 backdrop-blur">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-      <div class="text-sm tracking-[0.3em] text-zinc-400">FOCUS OS</div>
-      <nav class="hidden items-center gap-6 text-sm text-zinc-300 md:flex">
-        <a href="#problem" class="hover:text-white">문제</a>
-        <a href="#solution" class="hover:text-white">해결 방식</a>
-        <a href="#results" class="hover:text-white">변화</a>
-        <a href="#how" class="hover:text-white">사용 방식</a>
-        <a href="#faq" class="hover:text-white">FAQ</a>
-      </nav>
-      <a href="#start" class="rounded-full border border-white/15 bg-white px-4 py-2 text-sm font-medium text-zinc-950 transition hover:scale-[1.02]">지금 바로 시작하기</a>
-    </div>
-  </header>
 
-  <main>
-    <section class="relative overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_top,rgba(124,58,237,0.35),rgba(24,24,27,1))]">
-      <div class="mx-auto max-w-5xl px-6 py-20 text-center md:py-24 lg:px-8 lg:py-28">
-        <div class="mb-6 inline-flex items-center rounded-full border border-violet-400/30 bg-violet-500/10 px-4 py-2 text-sm text-violet-200">
-          Focus OS
-        </div>
+<header class="sticky top-0 z-30 border-b border-white/10 bg-zinc-950/80 backdrop-blur">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
 
-        <h1 class="text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
-          할 일을 관리하는 앱이 아니라
-          <br />
-          <span class="text-violet-300">지금 시작하게 만드는 앱</span>
-        </h1>
+<div class="text-sm tracking-[0.3em] text-zinc-400">
+FocusOS
+</div>
 
-        <p class="mx-auto mt-6 max-w-2xl text-base leading-7 text-zinc-300 md:text-lg md:leading-8">
-          할 일은 많은데 시작이 어려운 사람을 위해 만들어졌습니다.
-          Focus OS는 할 일을 줄이고 지금 해야 할 하나에 집중하도록 돕습니다.
-        </p>
+<a href="https://focusos-fawn.vercel.app"
+class="rounded-full border border-white/15 bg-white px-4 py-2 text-sm font-medium text-zinc-950 hover:scale-[1.02]">
+앱 열기
+</a>
 
-        <div class="mt-10 flex flex-col items-center gap-3">
-          <a id="start" href="#faq" class="rounded-2xl bg-white px-8 py-4 text-base font-semibold text-zinc-950 transition hover:scale-[1.02]">
-            지금 바로 시작하기
-          </a>
-          <div class="px-4 text-sm text-zinc-400">7일 동안 자유롭게 사용해보세요</div>
-        </div>
-      </div>
-    </section>
+</div>
+</header>
 
-    <section id="problem" class="scroll-mt-24 mx-auto max-w-7xl px-6 py-20 lg:px-8">
-      <div class="max-w-2xl">
-        <div class="text-sm tracking-[0.25em] text-violet-300">PROBLEM</div>
-        <h2 class="mt-4 text-3xl font-semibold md:text-4xl">
-          대부분의 사람은
-          <br />일을 못하는 게 아니라
-          <br />시작을 못합니다
-        </h2>
-      </div>
 
-      <div class="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-        <div class="rounded-[24px] border border-white/10 bg-white/5 p-5 md:rounded-[28px] md:p-6">
-          <div class="text-2xl">📋</div>
-          <h3 class="mt-4 text-xl font-semibold">할 일은 많은데 시작이 어렵다</h3>
-          <p class="mt-3 text-sm text-zinc-400">To-do 리스트는 계속 늘어나지만 실제로는 어떤 것부터 시작해야 할지 몰라 멈춰 있는 경우가 많습니다.</p>
-        </div>
-        <div class="rounded-[24px] border border-white/10 bg-white/5 p-5 md:rounded-[28px] md:p-6">
-          <div class="text-2xl">⏰</div>
-          <h3 class="mt-4 text-xl font-semibold">시간표는 오히려 압박이 된다</h3>
-          <p class="mt-3 text-sm text-zinc-400">시간 기준으로 일정을 만들지만 실제로는 지키지 못했다는 압박만 남는 경우가 많습니다.</p>
-        </div>
-        <div class="rounded-[24px] border border-white/10 bg-white/5 p-5 md:rounded-[28px] md:p-6">
-          <div class="text-2xl">🤯</div>
-          <h3 class="mt-4 text-xl font-semibold">무엇부터 해야 할지 모르겠다</h3>
-          <p class="mt-3 text-sm text-zinc-400">해야 할 일은 있지만 어떤 일을 먼저 해야 할지 판단하기 어려운 순간이 하루에도 여러 번 생깁니다.</p>
-        </div>
-      </div>
-    </section>
+<main>
 
-    <section id="solution" class="scroll-mt-24 mx-auto max-w-7xl px-6 pb-20 lg:px-8">
-      <div class="max-w-2xl">
-        <div class="text-sm tracking-[0.25em] text-violet-300">SOLUTION</div>
-        <h2 class="mt-4 text-3xl font-semibold md:text-4xl">
-          Focus OS는
-          <br />시작 구조를 만듭니다
-        </h2>
-      </div>
 
-      <div class="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-        <div class="rounded-[24px] border border-white/10 bg-white/5 p-5 md:rounded-[28px] md:p-6">
-          <div class="text-2xl">🗂️</div>
-          <h3 class="mt-4 text-xl font-semibold">Today 5 Limit</h3>
-          <p class="mt-3 text-sm text-zinc-400">오늘 해야 할 일을 5개로 제한해 선택 피로를 줄이고 실제로 시작 가능한 범위를 만듭니다.</p>
-        </div>
-        <div class="rounded-[24px] border border-white/10 bg-white/5 p-5 md:rounded-[28px] md:p-6">
-          <div class="text-2xl">🎯</div>
-          <h3 class="mt-4 text-xl font-semibold">Focus Mode</h3>
-          <p class="mt-3 text-sm text-zinc-400">지금 해야 할 카드 하나만 남겨 시야를 정리하고 방해 요소를 줄입니다.</p>
-        </div>
-        <div class="rounded-[24px] border border-white/10 bg-white/5 p-5 md:rounded-[28px] md:p-6">
-          <div class="text-2xl">🤖</div>
-          <h3 class="mt-4 text-xl font-semibold">AI Task Breakdown</h3>
-          <p class="mt-3 text-sm text-zinc-400">큰 작업을 바로 시작 가능한 작은 단계로 나눠 무엇부터 해야 할지 고민하는 시간을 줄입니다.</p>
-        </div>
-      </div>
-    </section>
+<!-- HERO -->
 
-    <section id="results" class="scroll-mt-24 mx-auto max-w-7xl px-6 pb-24 lg:px-8">
-      <div class="max-w-2xl">
-        <div class="text-sm tracking-[0.25em] text-violet-300">RESULT</div>
-        <h2 class="mt-4 text-3xl font-semibold md:text-4xl">
-          Focus OS를 사용하면
-          <br />이런 변화가 생깁니다
-        </h2>
-      </div>
+<section class="relative overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_top,rgba(124,58,237,0.35),rgba(24,24,27,1))]">
 
-      <div class="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-        <div class="rounded-[24px] border border-white/10 bg-white/5 p-5 md:rounded-[28px] md:p-6">
-          <div class="text-2xl">⚡</div>
-          <h3 class="mt-4 text-xl font-semibold">시작까지 걸리는 시간이 줄어듭니다</h3>
-          <p class="mt-3 text-sm text-zinc-400">할 일을 정리하는 시간이 아니라 바로 시작하는 시간이 늘어납니다.</p>
-        </div>
-        <div class="rounded-[24px] border border-white/10 bg-white/5 p-5 md:rounded-[28px] md:p-6">
-          <div class="text-2xl">⏱</div>
-          <h3 class="mt-4 text-xl font-semibold">실제 집중 시간을 확인합니다</h3>
-          <p class="mt-3 text-sm text-zinc-400">시작과 종료 시간을 기록해 실제로 얼마나 집중했는지 확인할 수 있습니다.</p>
-        </div>
-        <div class="rounded-[24px] border border-white/10 bg-white/5 p-5 md:rounded-[28px] md:p-6">
-          <div class="text-2xl">✅</div>
-          <h3 class="mt-4 text-xl font-semibold">하루가 끝날 때 완료 경험이 남습니다</h3>
-          <p class="mt-3 text-sm text-zinc-400">무한한 할 일이 아니라 끝낼 수 있는 범위를 만들어 완료 경험을 만듭니다.</p>
-        </div>
-      </div>
-    </section>
+<div class="mx-auto max-w-5xl px-6 py-24 text-center lg:px-8">
 
-    <section class="mx-auto max-w-7xl px-6 pb-24 lg:px-8">
-      <div class="max-w-2xl">
-        <div class="text-sm tracking-[0.25em] text-violet-300">PRODUCT</div>
-        <h2 class="mt-4 text-3xl font-semibold md:text-4xl">
-          Focus OS 화면을 보면
-          <br />구조가 바로 이해됩니다
-        </h2>
-      </div>
+<div class="mb-6 inline-flex items-center rounded-full border border-violet-400/30 bg-violet-500/10 px-4 py-2 text-sm text-violet-200">
+FocusOS
+</div>
 
-      <div class="mt-12 grid gap-8 lg:grid-cols-3">
-        <div class="rounded-[24px] border border-white/10 bg-zinc-900 p-5 md:rounded-[30px] md:p-6">
-          <div class="text-sm text-zinc-400">Focus Mode</div>
-          <div class="mt-2 text-xl font-semibold">지금 해야 할 카드 하나만 남기기</div>
-          <div class="mt-6 rounded-3xl border border-white/10 bg-zinc-950 p-4">
-            <div class="flex items-center justify-between text-xs text-zinc-500">
-              <span>FOCUS OS</span>
-              <span class="rounded-full bg-violet-500/15 px-2 py-1 text-violet-200">● Focus</span>
-            </div>
-            <div class="mt-4 rounded-2xl border border-violet-400/20 bg-violet-500/10 p-4">
-              <div class="text-[10px] uppercase tracking-wider text-violet-200/70">Current Focus</div>
-              <div class="mt-2 text-sm font-semibold">기획안 첫 문단 쓰기</div>
-              <p class="mt-2 text-xs leading-5 text-zinc-300">지금은 이 카드 하나만 보고 끝내면 됩니다.</p>
-              <div class="mt-4 space-y-2">
-                <div class="rounded-xl bg-white px-3 py-2 text-center text-xs font-semibold text-zinc-950">지금 시작하기</div>
-                <div class="rounded-xl border border-white/10 px-3 py-2 text-center text-xs">5분만 시작</div>
-              </div>
-            </div>
-          </div>
-        </div>
+<h1 class="text-5xl font-semibold leading-tight md:text-6xl">
+Start small
+<br>
+<span class="text-violet-300">finish one thing</span>
+</h1>
 
-        <div class="rounded-[24px] border border-white/10 bg-zinc-900 p-5 md:rounded-[30px] md:p-6">
-          <div class="text-sm text-zinc-400">Today 5 Limit</div>
-          <div class="mt-2 text-xl font-semibold">오늘 할 일 5개만 남기기</div>
-          <div class="mt-6 rounded-3xl border border-white/10 bg-zinc-950 p-4">
-            <div class="text-xs text-violet-300">Today</div>
-            <div class="mt-1 text-2xl font-semibold">오늘 할 일 (3/5)</div>
-            <div class="mt-4 space-y-3">
-              <div class="rounded-2xl border border-white/10 bg-white/5 p-3">
-                <div class="text-sm font-medium text-white">기획안 첫 문단 쓰기</div>
-                <div class="mt-2 h-2 rounded-full bg-white/10"><div class="h-2 w-2/3 rounded-full bg-violet-500"></div></div>
-              </div>
-              <div class="rounded-2xl border border-white/10 bg-white/5 p-3">
-                <div class="text-sm font-medium text-white">세금계산서 확인</div>
-                <div class="mt-2 h-2 rounded-full bg-white/10"><div class="h-2 w-1/2 rounded-full bg-violet-500"></div></div>
-              </div>
-              <div class="rounded-2xl border border-white/10 bg-white/5 p-3">
-                <div class="text-sm font-medium text-white">메일 답장 1개 보내기</div>
-                <div class="mt-2 h-2 rounded-full bg-white/10"><div class="h-2 w-1/3 rounded-full bg-violet-500"></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
+<p class="mx-auto mt-6 max-w-2xl text-lg text-zinc-300">
+할 일을 정리하는 앱이 아니라  
+지금 시작하게 만드는 앱
+</p>
 
-        <div class="rounded-[24px] border border-white/10 bg-zinc-900 p-5 md:rounded-[30px] md:p-6">
-          <div class="text-sm text-zinc-400">AI Breakdown</div>
-          <div class="mt-2 text-xl font-semibold">무엇부터 해야 할지 모를 때 단계로 나누기</div>
-          <div class="mt-6 rounded-3xl border border-white/10 bg-zinc-950 p-4">
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-3 text-xs leading-6 text-zinc-400">
-              큰 작업을 바로 시작 가능한 작은 단계로 나눕니다.
-            </div>
-            <div class="mt-4 space-y-3">
-              <div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-3">
-                <div class="flex h-6 w-6 items-center justify-center rounded-full bg-violet-500/15 text-xs text-violet-200">1</div>
-                <div class="text-sm text-white">핵심 문장 한 줄 적기</div>
-              </div>
-              <div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-3">
-                <div class="flex h-6 w-6 items-center justify-center rounded-full bg-violet-500/15 text-xs text-violet-200">2</div>
-                <div class="text-sm text-white">첫 문단 3줄 채우기</div>
-              </div>
-              <div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-3">
-                <div class="flex h-6 w-6 items-center justify-center rounded-full bg-violet-500/15 text-xs text-violet-200">3</div>
-                <div class="text-sm text-white">초안 저장하기</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="how" class="scroll-mt-24 border-y border-white/10 bg-white/[0.03]">
-      <div class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div class="max-w-2xl">
-          <div class="text-sm tracking-[0.25em] text-violet-300">HOW IT WORKS</div>
-          <h2 class="mt-4 text-3xl font-semibold md:text-4xl">Focus OS 사용 흐름</h2>
-        </div>
+<div class="mt-10 flex flex-col items-center gap-4">
 
-        <div class="mt-10 space-y-3 md:mt-12 md:space-y-4">
-          <div class="flex gap-3 rounded-[20px] border border-white/10 bg-zinc-900 p-4 md:gap-4 md:rounded-[24px] md:p-5">
-            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-violet-500/20">1</div>
-            <div>오늘 할 일 5개만 선택</div>
-          </div>
-          <div class="flex gap-3 rounded-[20px] border border-white/10 bg-zinc-900 p-4 md:gap-4 md:rounded-[24px] md:p-5">
-            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-violet-500/20">2</div>
-            <div>Focus Mode로 현재 작업 하나만 보기</div>
-          </div>
-          <div class="flex gap-3 rounded-[20px] border border-white/10 bg-zinc-900 p-4 md:gap-4 md:rounded-[24px] md:p-5">
-            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-violet-500/20">3</div>
-            <div>지금 시작하기 버튼으로 바로 시작</div>
-          </div>
-          <div class="flex gap-3 rounded-[20px] border border-white/10 bg-zinc-900 p-4 md:gap-4 md:rounded-[24px] md:p-5">
-            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-violet-500/20">4</div>
-            <div>시작과 종료 시간을 기록해 실제 집중 시간 확인</div>
-          </div>
-        </div>
-      </div>
-    </section>
+<a href="https://focusos-fawn.vercel.app"
+class="rounded-2xl bg-white px-8 py-4 font-semibold text-zinc-950 hover:scale-[1.02]">
+앱 시작하기
+</a>
 
-    <section class="mx-auto max-w-7xl px-6 py-20 md:py-24 lg:px-8">
-      <div class="rounded-[36px] border border-violet-400/20 bg-[linear-gradient(135deg,rgba(124,58,237,0.22),rgba(24,24,27,0.9))] p-12">
-        <h2 class="text-3xl font-semibold md:text-4xl">
-          작게 시작하고
-          <br />하나씩 끝내기
-        </h2>
-        <p class="mt-6 max-w-xl text-zinc-300">Focus OS는 일을 잘 정리하는 사람보다 일을 잘 시작하고 싶은 사람을 위해 만들어졌습니다.</p>
-        <a href="#start" class="mt-8 inline-block rounded-2xl bg-white px-6 py-3 font-semibold text-zinc-950 md:px-8 md:py-4">지금 바로 시작하기</a>
-      </div>
-    </section>
+<a href="https://focusos-fawn.vercel.app?page=live"
+class="rounded-2xl border border-violet-400 px-8 py-4 text-violet-200 hover:bg-violet-500/10">
+LIVE 집중방 참여
+</a>
 
-    <section id="faq" class="scroll-mt-24 mx-auto max-w-5xl px-6 py-20 lg:px-8">
-      <div class="text-center">
-        <div class="text-sm tracking-[0.25em] text-violet-300">FAQ</div>
-        <h2 class="mt-4 text-3xl font-semibold">자주 묻는 질문</h2>
-      </div>
+</div>
 
-      <div class="mt-12 space-y-4">
-        <div class="rounded-[24px] border border-white/10 bg-white/5 p-6">
-          <h3 class="text-lg font-semibold">Focus OS는 어떤 사람에게 맞나요?</h3>
-          <p class="mt-3 text-sm text-zinc-400">할 일은 많은데 시작이 잘 안 되거나 집중이 자주 끊기는 사람에게 맞습니다.</p>
-        </div>
-        <div class="rounded-[24px] border border-white/10 bg-white/5 p-6">
-          <h3 class="text-lg font-semibold">일반 할 일 앱과 뭐가 다른가요?</h3>
-          <p class="mt-3 text-sm text-zinc-400">Focus OS는 일을 많이 관리하는 앱이 아니라 지금 하나를 시작하게 만드는 구조에 집중합니다.</p>
-        </div>
-        <div class="rounded-[24px] border border-white/10 bg-white/5 p-6">
-          <h3 class="text-lg font-semibold">무료 체험이 있나요?</h3>
-          <p class="mt-3 text-sm text-zinc-400">7일 동안 전체 기능을 자유롭게 사용해보고 계속 사용할지 결정할 수 있습니다.</p>
-        </div>
-      </div>
-    </section>
-  </main>
+</div>
 
-  <footer class="border-t border-white/10 bg-zinc-950">
-    <div class="mx-auto max-w-7xl px-6 py-12 lg:px-8">
-      <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-        <div>
-          <div class="text-sm tracking-[0.3em] text-zinc-400">FOCUS OS</div>
-          <p class="mt-3 text-sm text-zinc-500">집중이 부족한 사람들을 위한 시작 시스템</p>
-        </div>
-      </div>
-      <div class="mt-8 text-xs text-zinc-600">© 2026 Focus OS. All rights reserved.</div>
-    </div>
-  </footer>
+</section>
+
+
+
+<!-- LIVE -->
+
+<section class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+
+<div class="max-w-2xl">
+
+<div class="text-sm tracking-[0.25em] text-violet-300">
+LIVE
+</div>
+
+<h2 class="mt-4 text-3xl font-semibold md:text-4xl">
+같이 집중하는
+<br>
+FocusOS LIVE
+</h2>
+
+<p class="mt-6 text-zinc-400">
+혼자 집중하기 어려울 때  
+같이 집중하는 공간
+</p>
+
+</div>
+
+
+<div class="mt-12 rounded-[32px] border border-white/10 bg-zinc-900 p-8 text-center">
+
+<div class="text-sm text-zinc-400">
+지금 집중 중
+</div>
+
+<div class="mt-2 text-4xl font-bold text-violet-300">
+🟢 LIVE
+</div>
+
+<p class="mt-4 text-zinc-300">
+24시간 열려있는 집중방
+</p>
+
+<a href="https://focusos-fawn.vercel.app?page=live"
+class="mt-6 inline-block rounded-xl bg-violet-500 px-6 py-3 font-semibold text-white hover:scale-[1.02]">
+LIVE 참여하기
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- FEATURES -->
+
+<section class="mx-auto max-w-7xl px-6 pb-24 lg:px-8">
+
+<div class="grid gap-8 md:grid-cols-3">
+
+<div class="rounded-[28px] border border-white/10 bg-white/5 p-6">
+
+<div class="text-2xl">🎯</div>
+
+<h3 class="mt-4 text-xl font-semibold">
+Focus Mode
+</h3>
+
+<p class="mt-3 text-sm text-zinc-400">
+지금 해야 할 하나만 남기고 집중
+</p>
+
+</div>
+
+
+<div class="rounded-[28px] border border-white/10 bg-white/5 p-6">
+
+<div class="text-2xl">🗂</div>
+
+<h3 class="mt-4 text-xl font-semibold">
+Today 5 Limit
+</h3>
+
+<p class="mt-3 text-sm text-zinc-400">
+오늘 할 일은 최대 5개
+</p>
+
+</div>
+
+
+<div class="rounded-[28px] border border-white/10 bg-white/5 p-6">
+
+<div class="text-2xl">⚡</div>
+
+<h3 class="mt-4 text-xl font-semibold">
+Start Small
+</h3>
+
+<p class="mt-3 text-sm text-zinc-400">
+작은 단계부터 시작
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CTA -->
+
+<section class="mx-auto max-w-7xl px-6 pb-24 lg:px-8">
+
+<div class="rounded-[36px] border border-violet-400/20 bg-[linear-gradient(135deg,rgba(124,58,237,0.22),rgba(24,24,27,0.9))] p-12 text-center">
+
+<h2 class="text-4xl font-semibold">
+지금 바로 시작하기
+</h2>
+
+<p class="mt-6 text-zinc-300">
+Start small, finish one thing
+</p>
+
+<a href="https://focusos-fawn.vercel.app"
+class="mt-8 inline-block rounded-2xl bg-white px-8 py-4 font-semibold text-zinc-950">
+FocusOS 시작
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+
+
+<footer class="border-t border-white/10 bg-zinc-950">
+
+<div class="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+
+<div class="text-sm tracking-[0.3em] text-zinc-400">
+FocusOS
+</div>
+
+<p class="mt-3 text-sm text-zinc-500">
+Start small, finish one thing
+</p>
+
+<div class="mt-8 text-xs text-zinc-600">
+© 2026 FocusOS
+</div>
+
+</div>
+
+</footer>
+
 </body>
 </html>
